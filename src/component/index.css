@@ -1,0 +1,23 @@
+.sidebar-container {
+    position: relative;
+}
+
+.sidebar {
+    width: 200px; /* 侧边栏宽度 */
+    height: 100vh; /* 侧边栏高度 */
+    background-color: #f0f0f0; /* 侧边栏背景颜色 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #ccc; /* 侧边栏右侧线条 */
+}
+
+.sidebar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 200px; /* 侧边栏宽度 */
+    width: 1px; /* 线条宽度 */
+    height: 100vh; /* 线条高度 */
+    background-color: #ccc; /* 线条颜色 */
+}
