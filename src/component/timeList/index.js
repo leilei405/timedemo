@@ -4,7 +4,7 @@ import {
   formatTimeFromTimestamp,
   timestampToMonthDayTime,
 } from "../../utils/utils";
-import "./index.css";
+// import "./index.css";
 
 const id = nanoid();
 

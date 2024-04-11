@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            min-width: 550px;
+        }
+        #header {
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+        #container {
+            padding-left: 200px;
+            padding-right: 150px;
+        }
+        #container .column {
+            float: left;
+        }
+        #center {
+            background-color: #ccc;
+            width: 100%;
+        }
+        #left {
+            position: relative;
+            background-color: yellowgreen;
+            width: 200px;
+            margin-left: -100%;
+            right: 200px;
+        }
+        #right {
+            background-color: red;
+            width: 150px;
+            margin-right: -100%;
+        }
+        #footer {
+            clear: both;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+        .clearfix:after {
+            content: '';
+            display: table/block;
+            clear: both;
+            /* // 兼容IE低版本  但是现在好像没有必要了 */
+        }
+    </style>
+</head>
+<body>
+    <div id="header">Header</div>
+    <div id="container" class="clearfix">
+        <div id="center" class="column">Center</div>
+        <div id="left" class="column">Left</div>
+        <div id="right" class="column">Right</div>
+    </div>
+    <div id="footer">Footer</div>
+
+    <!-- h5 pc 的区别？ -->
+    <!-- 什么类型的项目？ -->
+    <!-- B端和C端的区别？ 1. 面向的客户的群体  cb   2.   -->
+    <!-- useMemo useCallback -->
+    <!-- 怎么看待加班吗  送命题--> 
+</body>
+</body>
+</html>
